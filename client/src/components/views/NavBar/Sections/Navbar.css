@@ -9,14 +9,17 @@
 }
 
 .menu__logo {
-  width: 150px;
+  width: 260px;
   float: left;
 }
 
 .menu__logo a {
   display: inline-block;
-  font-size: 20px;
-  padding: 19px 20px;
+  font-size: 30px;
+  padding: 7px 10px;
+  color: #000;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
 }
 
 .menu__container .ant-menu-item {
