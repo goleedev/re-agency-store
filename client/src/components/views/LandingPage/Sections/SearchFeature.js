@@ -15,11 +15,11 @@ function SearchFeature(props) {
     }
 
     return (
-        <div>
+        <div className="search-filter">
             <Search
                 value={SearchTerms}
                 onChange={onChangeSearch}
-                placeholder="Search By Typing..."
+                placeholder="Search"
             />
         </div>
     )

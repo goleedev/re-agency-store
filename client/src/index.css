@@ -1,6 +1,8 @@
+/* Imports */
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,800&display=swap');
 
+/* Generals */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -24,6 +26,7 @@ body {
   height: 100vh;
 }
 
+/* Inputs */
 input.error {
   border-color: red;
 }
@@ -35,6 +38,7 @@ input.error {
   margin-top: -12px;
 }
 
+/* Tables */
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -49,4 +53,33 @@ td,th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+/* Landing */
+.landing__select__header {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.ant-collapse-content-box span {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.ant-collapse-content-box span:hover,
+.ant-collapse-content-box span:focus {
+  color: #0275d8;
+}
+
+/* Search */
+.search-filter {
+  margin-right: 2%;
+}
+
+/* Upload */
+.upload__title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 7% 0;
 }

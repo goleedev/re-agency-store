@@ -1,22 +1,23 @@
+/* Imports */
 @import '~antd/dist/antd.css';
 
 .menu {
+  width: 100%;
   padding: 0 20px;
-  border-bottom: solid 1px #e8e8e8;
   overflow: auto;
-  box-shadow: 0 0 30px #f3f1f1;
-  background-color: white;
+  box-shadow: 0 0 100px #fff;
+  background-color: #fff;
 }
 
 .menu__logo {
-  width: 260px;
+  width: 280px;
   float: left;
 }
 
 .menu__logo a {
   display: inline-block;
   font-size: 30px;
-  padding: 7px 10px;
+  padding: 7px;
   color: #000;
   font-family: 'Caveat', cursive;
   font-weight: bold;
@@ -32,7 +33,7 @@
 
 .menu__container .ant-menu-item a,
 .menu__container .ant-menu-submenu-title a {
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 .menu__container .ant-menu-horizontal {
@@ -47,13 +48,20 @@
   float: right;
 }
 
+/* Menu - Small Device */
 .menu__mobile-button {
   float: right;
-  height: 32px;
-  padding: 6px;
+  width: 50px !important;
+  height: 30px !important;
+  padding: 3px;
   margin-top: 8px;
-  display: none !important; /* use of important to overwrite ant-btn */
-  background: #3e91f7;
+  display: none !important;
+  background-color: #3e91f7;
+  border: none;
+}
+
+.menu__mobile-button:hover {
+  background: #2c68b3;
 }
 
 .menu_drawer .ant-drawer-body {
@@ -68,6 +76,10 @@
 @media (max-width: 767px) {
   .menu__mobile-button {
     display: inline-block !important;
+    width: 45px !important;
+    height: 36px !important;
+    padding: 6px;
+    margin-top: 13px;
   }
 
   .menu_left,
@@ -87,4 +99,5 @@
   .menu__logo a {
     padding: 10px 20px;
   }
+  
 }

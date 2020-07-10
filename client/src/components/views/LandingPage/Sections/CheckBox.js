@@ -28,6 +28,7 @@ function CheckBox(props) {
     const renderCheckboxLists = () => props.list && props.list.map((value, index) => (
         <React.Fragment key={index}>
             <Checkbox
+                className="landing__select__content"
                 onChange={() => handleToggle(value._id)}
                 type="checkbox"
                 checked={Checked.indexOf(value._id) === -1 ? false : true}
@@ -39,7 +40,7 @@ function CheckBox(props) {
     return (
         <div>
             <Collapse defaultActiveKey={['0']} >
-                <Panel header="Continents" key="1">
+                <Panel className="landing__select__header" header="Continents 🗺️" key="1">
                     {renderCheckboxLists()}
                 </Panel>
             </Collapse>
