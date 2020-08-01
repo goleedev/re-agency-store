@@ -1,21 +1,39 @@
 /* Imports */
 @import "~react-image-gallery/styles/css/image-gallery.css";
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,800&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 /* Generals */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100vw;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'Open Sans', sans-serif;
+  padding: 0;
+}
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #24292e;
-  background-color: #fff;
+  color: #242424;
+  background-color: #fafaf6;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+}
+
+::-moz-selection {
+  background: #f5cf68 !important;
+  color: #242424 !important;
+}
+
+::selection {
+  background: #f5cf68 !important;
+  color: #242424 !important;
 }
 
 .app {
@@ -46,13 +64,13 @@ table {
 }
 
 td,th {
-  border: 1px solid #dddddd;
+  border: 1px solid #fafaf6;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #fafaf6;
 }
 
 /* Landing */
@@ -68,7 +86,7 @@ tr:nth-child(even) {
 
 .ant-collapse-content-box span:hover,
 .ant-collapse-content-box span:focus {
-  color: #0275d8;
+  color: #435dd2;
 }
 
 /* Search */
@@ -82,4 +100,24 @@ tr:nth-child(even) {
   text-transform: uppercase;
   font-weight: bolder;
   margin: 7% 0;
+}
+
+/* Landing */
+.landing__image {
+  width: 100vw;
+  z-index: -999;
+}
+
+/* Cart */
+.ant-badge-count {
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+/* Mobile Device */
+@media (max-width: 767px) {
+  .ant-badge-count {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
 }

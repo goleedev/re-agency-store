@@ -11,7 +11,6 @@ import './Sections/Landing.css'
 const { Meta } = Card;
 
 function LandingPage() {
-
     const [Products, setProducts] = useState([])
     const [Skip, setSkip] = useState(0)
     const [Limit, setLimit] = useState(8)
@@ -67,7 +66,7 @@ function LandingPage() {
 
     const renderCards = Products.map((product, index) => {
 
-        return <Col lg={6} md={8} xs={24}>
+        return <Col key={index} lg={6} md={12} xs={24}>
             <Card
                 hoverable={true}
                 cover={<a href={`/product/${product._id}`} > <ImageSlider images={product.images} /></a>}
@@ -143,9 +142,10 @@ function LandingPage() {
 
 
     return (
-        <div style={{ width: '75%', margin: '3rem auto' }}>
+        <div>
+            <img className="landing__image" src={require("../../images/main.jpg")} alt="main" />
             <div style={{ textAlign: 'center' }}>
-                <h2 className="landing__title">  Let's Take A Trip </h2>
+                <h2 className="landing__title">  검색 </h2>
             </div>
 
 
@@ -194,7 +194,7 @@ function LandingPage() {
 
             {PostSize >= Limit &&
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <button onClick={onLoadMore}>Load More <Icon type="loading" /></button>
+                    <button onClick={onLoadMore}>더보기 <Icon type="reload" /></button>
                 </div>
             }
 

@@ -3,10 +3,10 @@
 
 .menu {
   width: 100%;
-  padding: 0 20px;
+  padding: 0;
   overflow: auto;
-  box-shadow: 0 0 100px #fff;
-  background-color: #fff;
+  position: fixed;
+  background-color: #fafaf6;
 }
 
 .menu__logo {
@@ -16,11 +16,10 @@
 
 .menu__logo a {
   display: inline-block;
-  font-size: 30px;
-  padding: 7px;
-  color: #000;
-  font-family: 'Caveat', cursive;
-  font-weight: bold;
+  font-size: 40px;
+  padding: 10px;
+  color: #435dd2;
+  font-family: 'Black Han Sans', sans-serif;
 }
 
 .menu__container .ant-menu-item {
