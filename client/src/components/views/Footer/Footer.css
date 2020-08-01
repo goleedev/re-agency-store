@@ -1,0 +1,32 @@
+/* Footer */
+.footer__container {
+    background-color: #3d4961;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 30px 250px;
+    padding-top: 40px;
+    margin: 0;
+    color: #fafaf6;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+.footer__container a {
+    color: #fafaf6 !important;
+    margin-right: 5px;
+}
+
+.footer__container h3 {
+    position: absolute;
+    right: 250px;
+    top: 50px;
+    color: #fafaf6;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+.footer__container p {
+    width: 100%;
+    line-height: 10px;
+}
